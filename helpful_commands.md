@@ -88,3 +88,24 @@ When the cursor is on any opening parentheses, type % to move to it's closing
 :%s/old/new/g - this will replace every instance in the whole file 🔥
 :%s/old/new/gc - this will replace every instance in the whole file, but prompt whether or not you want to change each time 🔥
 
+
+### Writing Files
+:!ls - to get a listing of your current directory
+:w FILENAME - to save the current file as FILENAME in the current directory
+:!rm FILENAME - to delete FILENAME in the current directory
+
+_using !: seems to just run a command in the terminal_
+
+
+### Writing a portion of content to a new file
+1) Press v _(this enteres visual mode.. which seems to just be be "selection" mode)_
+2) Press :v FILENAME
+
+### Retrieving content from another file
+:r FILENAME - puts the content of FILENAME where the cursor is
+
+*Note: You can also use this to read output from an external command. For exampe, :r !ls will put the content of of ls command where the cursor is *
+
+LESSON 6
+
+
