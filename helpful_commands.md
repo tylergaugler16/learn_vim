@@ -106,6 +106,33 @@ _using !: seems to just run a command in the terminal_
 
 *Note: You can also use this to read output from an external command. For exampe, :r !ls will put the content of of ls command where the cursor is *
 
-LESSON 6
+### Open Command
+o - will put an extra line below the cursor
+O - will put an extra line above the cursor
+
+### Append Command
+a - will go to the next character and enter Insert mode
+A - will go to the end of the line and enter Instert mode
+
+### Replace Command
+R - will enter into Replace mode, which is like Insert mode, but every character typed will overrite the existing one. 
+
+### Copy and Paste
+1) Use v(Visual mode) to select text
+2) Press y to copy
+3) Go to the place you want to paste, and press p
+
+### File Managment
+Working with large projects
+
+#### Buffers
+:e path/to/file - will open up the specified file in a new buffer
+:buffers - will list the current buffers (and show the buffer number for each)
+:b2 - will go to the file in the second buffer. Works for all numbers
 
 
+
+### Plugins
+
+#### ["tpope/vim-rails"](https://github.com/tpope/vim-rails)
+gf - when the cursor is over any identifier (model, controller, etc) and it will jump to it 🔥
